@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
+  selector: 'app-root', // Hangi tag ile kullanacağımızı belirtiyoruz.
+  templateUrl: './app.component.html', // Hangi dosyanın componenti olduğu
+  styleUrls: ['./app.component.css'],
+}) // C# karşılığı Attribute. Alttaki classın bir component olduğu ve özelliklerini belirtiyor.
 export class AppComponent {
-  title = 'northwind';
+  title: string = 'northwind';
+  user: string = 'Oğuzhan Gümüş';
+  
 }
